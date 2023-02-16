@@ -8,7 +8,7 @@ const GameCard = ({ game, index, arr }) => {
         <div className="game-data">
             <section className="top-section">
                 <div className="img-container">
-                    <img src={url + '/uploads/' + game.image} alt="" />
+                    <img src={url + game.image?.data.attributes.url} alt="" />
 
                 </div>
                 <div className="details">
